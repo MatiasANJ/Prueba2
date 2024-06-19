@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InacapProfecionales</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .header {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        text-align: center; 
+    }
+    .header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: -1;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        height: 50px; 
+        margin-right: 10px;
+    }
+    .botones {
+        display: flex;
+    }
+    .boton {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .contenido {
+        text-align: center; 
+        margin-top: 50px; 
+    }
+    .card-container {
+        display: flex;
+        justify-content: space-around; 
+        margin-top: 30px;
+    }
+    .card {
+        flex: 1;
+        margin: 0 10px; /* Espacio entre las cartas */
+    }
+    .footer {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        color: #333;
+        font-size: 14px;
+    }
+    /* Estilos adicionales para centrar el título "Personas" */
+    h2#titulo-personas {
+        text-align: center;
+        margin-top: 30px;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">
+        <img src="Logo.png" alt="Logo">
+        <h1>Inacap informatica</h1>
+    </div>
+    <div class="botones">
+        <button class="boton">Home</button>
+        <button class="boton">Sobre nosotros</button>
+        <button class="boton">Contacto</button>
+    </div>
+</div>
+
+<div class="contenido">
+    <h1>Bienvenidos</h1>
+    <p>Aqui encontraras a los mejores profesionales salidos de nuestro instituto, los cuales se enfocan en diferentes áreas siendo los más reconocidos en todo el mundo,
+        gran parte de ellos cuentan con diplomados y doctorados en el área en la cual se enfocan.
+    </p>
+</div>
+
+<h2 id="titulo-personas">Personas</h2>
+
+<div class="card-container">
+    <div class="card">
+        <img src="OFI1.png" class="card-img-top" alt="persona1">
+        <div class="card-body">
+            <h5 class="card-title">Roberto Erikson</h5>
+            <p class="card-text">Especialista en ciberseguridad con amplio campo laboral, presenta una larga carrera como profesor de Oxford.</p>
+            <a href="#" class="btn btn-primary">Contactar</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="OFI2.png" class="card-img-top" alt="persona2">
+        <div class="card-body">
+            <h5 class="card-title">Julio Cortes</h5>
+            <p class="card-text">Máximo nivel en programación, ha desarrollado más de 20 softwares con éxito rotundo con más de 300.000.000 millones de pesos generados por sus empresas.</p>
+            <a href="#" class="btn btn-primary">Contactar</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="OFI3.png" class="card-img-top" alt="persona3">
+        <div class="card-body">
+            <h5 class="card-title">Margarita Fuentes</h5>
+            <p class="card-text">Doctorado en base de datos, con más de 20 años de carrera trabajando en los mejores bancos del mundo.</p>
+            <a href="#" class="btn btn-primary">Contactar</a>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    Matias Anjari Brieba - Prueba numero 2
+</div>
+
+</body>
+</html>
+
+
